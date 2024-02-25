@@ -78,6 +78,7 @@
                 })
             });
             // weather api Source Code: https://github.com/ramazansancar/weatherApi
+            // other apiKey: 18b7da270bfc7233837e5cb92fd84f38
             axios.get("https://weatherapi.cyclic.app/weather/weekly/daily/Izmir?units=metric&lang=tr&count=7&api=a3f46c687f2144a15d0adc8b5d513af2")
             .then((response) => {
                 let weatherData = response.data.data.days;
@@ -85,14 +86,14 @@
                     // Time format 2023-01-01T00:00:00Z
                     //item.datetime = item.datetime.replace(' ','T').concat('Z')//moment().format('DD-MM-YYYYTHH:mm:ssZ')
                     //moment convert 26.09.2023T13:00:00Z
-                    console.log(item.date)
+                    //console.log(item.date)
                     //item.datetime = moment(item.date).format('DD.MM.YYYY');
 
                     //item.datetime = moment(item.datetime).locale('tr').format('dddd');
                 });
-                console.log(weatherData)
+                //console.log(weatherData)
                 this.weatherData = weatherData
-                this.todayTemp = Math.round(this.weatherData.days[0].temp_day);
+                this.todayTemp = Math.round(this.weatherData[0].temp_day);
                 this.$store.state.weatherData = weatherData
             })
             .catch(error => {
