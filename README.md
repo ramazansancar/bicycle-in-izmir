@@ -7,7 +7,7 @@ Occupancy Rates at Bicycle Stations in Izmir
 - [ ] Maps move to [Leaflet](https://leafletjs.com/)
   - Use: [Vue 2 Leaflet](https://vue2-leaflet.netlify.app/)
 - [ ] No page error that occurs when visiting "list" and "crew" address will be fixed. (Router)
-- [ ] Missing weather icons will be added or imported from openweathermap
+- [X] Missing weather icons will be added or imported from openweathermap
 - [ ] For the "list" page in mobile view, the map will be brought to the top or the div will be given height. (At least 3 stations `heigth:"270px"`)
 - [ ] There will be only one box that opens when clicking on locations on the map.
 - [ ] Menu tab for mobile will be added
