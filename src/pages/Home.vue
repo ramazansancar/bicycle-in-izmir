@@ -78,8 +78,7 @@
                 })
             });
             // weather api Source Code: https://github.com/ramazansancar/weatherApi
-            // other apiKey: 18b7da270bfc7233837e5cb92fd84f38
-            axios.get("https://weatherapi.cyclic.app/weather/weekly/daily/Izmir?units=metric&lang=tr&count=7&api=a3f46c687f2144a15d0adc8b5d513af2")
+            axios.get("https://weatherapi.cyclic.app/weather/weekly/daily/Izmir?units=metric&lang=tr&count=7")
             .then((response) => {
                 let weatherData = response.data.data.days;
                 weatherData.forEach((item, index) => {
