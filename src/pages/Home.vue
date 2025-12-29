@@ -78,7 +78,7 @@
                 })
             });
             // weather api Source Code: https://github.com/ramazansancar/weatherApi
-            axios.get("https://api.ramsan.tr/weather/weekly/daily/Izmir?units=metric&lang=tr&count=7")
+            axios.get("https://publicapi.ramazansancar.com.tr/weather/weekly/daily/Izmir?units=metric&lang=tr&count=7")
             .then((response) => {
                 let weatherData = response.data.data.days;
                 weatherData.forEach((item, index) => {
